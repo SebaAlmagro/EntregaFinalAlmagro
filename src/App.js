@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from './components/header/NavBar';
+import ContainerCardItems from './components/components items/ContainerCardItems';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import DetailsItem from './components/components items/DetailsItem';
+import { createContext, useState } from 'react';
+import ProviderContextoListCart from './components/components items/ProviderContextListCart';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ProviderContextoListCart>
+      <BrowserRouter>
+        <NavBar />
+          <Routes>
+            <Route path='/' element={ <ContainerCardItems />} />
+            <Route path='/item/:idItem' element={ <DetailsItem />} />
+            <Route path='/category/:idCategory' element={ <ContainerCardItems />} />
+          </Routes>
+      </BrowserRouter>
+    </ProviderContextoListCart>
+    
+    
   );
 }
 

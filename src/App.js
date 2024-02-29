@@ -1,7 +1,7 @@
 import NavBar from './components/header/NavBar';
 import ContainerCardItems from './components/components items/ContainerCardItems';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import DetailsItem from './components/components items/DetailsItem';
+import DetailsItem from './components/components items/ItemDetail';
 import { createContext, useState } from 'react';
 import ProviderContextoListCart from './components/components items/ProviderContextListCart';
 

@@ -1,4 +1,4 @@
-.itemCart{
+.ItemList{
     display: flex;
     border: 1px solid #d2b8ff;
     width: 100%;
@@ -9,7 +9,7 @@
     position: relative;
 }
 
-.itemCart .delete{
+.ItemList .delete{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,22 +20,22 @@
     border-radius: 50%;
 }
 
-.itemCart .delete img{
+.ItemList .delete img{
     transform: scale(0.6);
 }
 
-.itemCart .img{
+.ItemList .img{
     display: flex;
     justify-content: center;
     width: 25%;
     height: 100%;
 }
 
-.itemCart .img img{
+.ItemList .img img{
     transform: scale(0.4);
 }
 
-.itemCart .description-cantidad{
+.ItemList .description-cantidad{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,11 +44,11 @@
     height: 50%;
 }
 
-.itemCart .description-cantidad .title {
+.ItemList .description-cantidad .title {
     font-weight: bold;
 }
 
-.itemCart .price{
+.ItemList .price{
     display: flex;
     flex-direction: column;
     width: 33.33%;
@@ -56,12 +56,12 @@
     justify-content: center;
 }
 
-.itemCart .price .subtotal{
+.ItemList .price .subtotal{
     font-weight: bold;
     width: 100%;
 }
 
-.itemCart .price .price{
+.ItemList .price .price{
     font-weight: bold;
     color: #5b00fb;
     font-size: 31px;

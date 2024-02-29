@@ -3,7 +3,7 @@ import "../../styles/NavBar.css"
 import ItemListContainer from "./ItemListContainer";
 import CartWidget from "./CartWidget";
 import ContainerCart from "./ContainerCart";
-import ContextCart from "./ContextCart";
+import ContextCart from "./CartContext";
 
 const NavBar = () => {
 

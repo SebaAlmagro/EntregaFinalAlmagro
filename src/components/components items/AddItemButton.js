@@ -1,6 +1,6 @@
-const AddCantCart = (props) => {
+const AddItemButton = (props) => {
     return(
-        <div className="addCantCart">
+        <div className="AddItemButton">
             <span>Quiero:</span>
             <div>
                 <button id="quitar">-</button>
@@ -11,4 +11,4 @@ const AddCantCart = (props) => {
     )   
 }
 
-export default AddCantCart; 
+export default AddItemButton; 

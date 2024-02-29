@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import cart from "../../img/cart.svg"
 import { listCartContext } from "../components items/ProviderContextListCart";
-import { controllerShowCart } from "./ContextCart.js";
+import { controllerShowCart } from "./CartContext.js";
 
 const CartWidget = () => {
     const { setCartShow, cartShow } = useContext(controllerShowCart)

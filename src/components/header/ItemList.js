@@ -1,15 +1,15 @@
-import "../../styles/ItemCart.css"
+import "../../styles/ItemList.css"
 import deleteWhite from "../../img/deleteWhite.svg"
 import { useContext } from "react"
 import { listCartContext } from "../components items/ProviderContextListCart"
 
 
-const ItemCart = ( {id, title, image, price, quantity } ) => {
+const ItemList = ( {id, title, image, price, quantity } ) => {
 
     const { removeFromCart } = useContext(listCartContext)
     
     return (
-        <div className="itemCart">
+        <div className="ItemList">
 
             <div className="img">
                 <img src={image}></img>
@@ -32,4 +32,4 @@ const ItemCart = ( {id, title, image, price, quantity } ) => {
     )
 }
 
-export default ItemCart
+export default ItemList

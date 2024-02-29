@@ -1,9 +1,9 @@
 import "../../styles/ContainerCart.css";
 import close from "../../img/close.svg";
-import ItemCart from "./ItemCart";
+import ItemList from "./ItemList.js";
 import clear from "../../img/clear.svg";
 import { useContext } from "react";
-import { controllerShowCart } from "./ContextCart.js";
+import { controllerShowCart } from "./CartContext.js";
 import { listCartContext } from "../components items/ProviderContextListCart";
 
 const ContainerCart = () => {
@@ -32,7 +32,7 @@ const ContainerCart = () => {
                     {
                         (listCart.length === 0 ) ? <span className="emptyCart">Tu carrito esta vacio, ¡llenalo!</span>
                         : listCart.map(producto => ( 
-                            <ItemCart 
+                            <ItemList 
                                 key={producto.id}
                                 id={producto.id}
                                 title={producto.title}

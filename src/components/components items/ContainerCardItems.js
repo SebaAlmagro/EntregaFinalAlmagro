@@ -1,7 +1,7 @@
 import fetchSimultion from "../../utils/fetchSimulation";
 import productos from "../../utils/products";
 import { useState, useEffect } from "react";
-import CardItem from "./CardItem";
+import CardItem from "./ItemDetailContainer";
 import "../../styles/ContainerCardItems.css"
 import { useParams } from "react-router-dom";
 import MoonLoader from "react-spinners/ClipLoader";

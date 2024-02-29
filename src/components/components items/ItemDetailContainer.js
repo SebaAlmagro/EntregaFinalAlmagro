@@ -1,8 +1,8 @@
-import Image from "./Image";
+import Image from "./Image.js";
 import "../../styles/CardItem.css"
 import Description from "./Description.js";
 import ButtonDetalles from "./Buttondetails.js";
-import ButttonAddCart from "./ButtonAddCart";
+import ButttonAddCart from "./ItemQuantitySelector.js";
 import { Link } from "react-router-dom";
 import cart from "../../img/cart-white.svg"
 

@@ -1,4 +1,4 @@
-const ButtonDetails = (props) => {
+const ButtonDetalles = (props) => {
     return(
         <button 
             id="detalles" 
@@ -7,4 +7,4 @@ const ButtonDetails = (props) => {
     )
 }
 
-export default ButtonDetails;
+export default ButtonDetalles;
